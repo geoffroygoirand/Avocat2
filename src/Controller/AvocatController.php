@@ -17,4 +17,18 @@ class AvocatController extends AbstractController
             'controller_name' => 'AvocatController',
         ]);
     }
+  
+    public function create(Request $request)
+{
+    // build the form ...
+
+    $avocat = new Avocat; 
+       $avocat -> setName; 
+       
+        return $this->render('create.html.twig'); 
+    
+    }
+
+    // render the template
 }
+

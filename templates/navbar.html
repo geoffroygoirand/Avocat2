@@ -1,0 +1,44 @@
+{% block navbar %}
+
+    <div class="sticky">
+        <nav role="navigation" data-topbar="" class="top-bar">
+            <ul class="title-area">
+                <li class="name">
+                    {#<span class="title">#}
+                        <a href="{{ path('zimzim_categoryproduct_itemhomepublic') }}">
+                            {#
+                            <span class="icon-medium icon-home vertical-middle"></span>
+                            {{ 'views.navbar.title'|trans }}
+                            #}
+                            <img class="img-navbar" src="{{ asset('bundles/zimzimbundlesuser/images/Feel-expert-francais-de-la-LED.png') }}" />
+                        </a>
+                    {#</span>#}
+                </li>
+                <li class="toggle-topbar menu-icon">
+                    <a href="#">
+                        <span>{{ 'views.navbar.menu'|trans }}</span>
+                    </a>
+                </li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="right">
+                    <li class="divider"></li>
+                    <li>
+                        <a class="" href="{{ path('zimzim_categoryproduct_category_listslugnull') }}">
+                            <span class="icon-medium icon-file vertical-middle"></span>
+                            {{ 'views.navbar.product'|trans }}
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="" href="#">
+                            <span class="icon-medium icon-address-book vertical-middle"></span>
+                            {{ 'views.navbar.contact'|trans }}
+                        </a>
+                    </li>
+                   
+                </ul>
+            </section>
+        </nav>
+    </div>
+{% endblock navbar %}
